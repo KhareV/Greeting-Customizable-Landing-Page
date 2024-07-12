@@ -1,0 +1,113 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 20px 20px 40px, inset -20px -20px 40px;
+}
+
+.img {
+    background: url(pexels-thomas-balabaud-735585-7408586.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -4;
+    opacity: 0.6;
+
+}
+
+
+
+.greeting {
+    font-size: 40px;
+    margin: 40px;
+}
+
+.text {
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.timer {
+    height: 100px;
+    width: 50vw;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    border: 3px black solid;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#focus {
+    padding: 20px;
+    margin-top: 20PX;
+    border: 3px black solid;
+    transition: all 1s;
+}
+
+#focus:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .timer {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+
+    .greeting {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #focus {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        font-size: 10px;
+
+
+    }
+
+    .greeting {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #focus {
+        font-size: 18px;
+    }
+}
